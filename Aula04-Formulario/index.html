@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04 - Formulários</title>
+</head>
+<body>
+    <!-- Formulário para envio de dados para o servidor -->
+    <form>
+        <label for="idnome">Nome</label>
+        <input type="text" name="nome" id="idnome">
+        <br/>
+        <label for="idemail">Email</label>
+        <input type="email" name="email" id="idemail">
+        <br/>
+        <label for="idmsg">Mensagem</label>
+        <textarea id="idmsg" cols="30" rows="10"></textarea>
+        <br/>
+        <!-- input do tipo radio permite selecionar apenas 1 use no name para agrupar os inputs -->
+        <label for="idsexo">Sexo</label>
+
+        <input type="radio" id="idsexoM" value="M" checked name="sexo">
+        <label for="idsexoM">Masculino</label>
+        
+        <input type="radio" id="idsexoF" value="F" name="sexo">
+        <label for="idsexoF">Feminino</label>
+
+        <input type="radio" id="idsexoO" value="F" name="sexo">
+        <label for="idsexoO">Outro</label>
+        <br/>
+        <input type="checkbox" id="idenviarnotific">
+        <label for="idenviarnotific">Enviar notificações?</label>
+        <br/>
+        <label for="idcursos">Curso</label>
+        <select id="idcursos">
+            <option value="1">Java</option>
+            <option value="2">PHP</option>
+            <option value="3" selected>Python</option>
+            <option value="4">C#</option>
+            <option value="5">C++</option>
+        </select>
+        <br/>
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
