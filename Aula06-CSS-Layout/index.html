@@ -7,12 +7,6 @@
 </head>
 <body class="old">
     <style>
-        body.old {
-            background-color: bisque;
-        }
-        body.new {
-            background-color: blue;
-        }
         p, p a { color: green;}
         a {
             height: 200px;
@@ -29,14 +23,6 @@
         Olá seja bem vindo. 
         <a href="#">Click aqui para entar</a>
     </p>
-    <select id="seletor">
-        <option value="old">Old</option>
-        <option value="new">New</option>
-    </select>
-    <script>
-        document.getElementById('seletor').addEventListener('change', function() {
-            document.body.className = this.value;
-        });
-    </script>
+
 </body>
 </html>
