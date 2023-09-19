@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 06 - CSS - Layout</title>
+</head>
+<body class="old">
+    <style>
+        body.old {
+            background-color: bisque;
+        }
+        body.new {
+            background-color: blue;
+        }
+        p, p a { color: green;}
+        a {
+            height: 200px;
+            width: 200px;
+            border: 2px solid red;
+            display: block;
+        }
+        a:hover {
+            background-color: lightblue;
+            border-color: blue;
+        }
+    </style>
+    <p>
+        Olá seja bem vindo. 
+        <a href="#">Click aqui para entar</a>
+    </p>
+    <select id="seletor">
+        <option value="old">Old</option>
+        <option value="new">New</option>
+    </select>
+    <script>
+        document.getElementById('seletor').addEventListener('change', function() {
+            document.body.className = this.value;
+        });
+    </script>
+</body>
+</html>
