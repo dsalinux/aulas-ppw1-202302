@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: rgba(0,0,0,0.8);
+    height: 60px;
+}
+.menu li {
+    float: left;
+}
+.menu li a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 60px;
+    padding: 0 20px;
+}
+.menu li a:hover {
+    background-color: #999;
+}
+.menu li ul {
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    box-shadow: 5px 0px 10px -5px black;
+}
+.menu li:hover ul {
+    display: block;
+    border-radius: 0px 0px 20px 20px;
+    overflow: hidden;
+}
+.menu li ul li {
+    float: none;
+}
+.menu li ul li a {
+    padding: 0 40px 0 20px;
+}
