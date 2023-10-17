@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+}
+.container {
+    height: 100vh;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.container div {
+    background-color: #cecece;
+    flex-basis: 18%;
+}
+/* .container div {
+    flex: 0;
+}
+.container .conteudo {
+    flex: 1;
+} */

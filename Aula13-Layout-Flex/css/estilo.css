@@ -1,0 +1,95 @@
+:root {
+    --cor-principal: #8338EC;
+    --cor-hover-botao: #A26AF1;
+    --cor-texto: #fff;
+}
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    background-color: var(--cor-principal);
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+    line-height: 48px;
+    padding: 0 20px;
+}
+.header .menu {
+    display: flex;
+    height: 48px;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header .menu li a {
+    color: var(--cor-texto);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+.header .menu li a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.main {
+    flex: 1;
+    padding: 15px 0;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 0 10px;
+}
+.produtos .produto {
+    flex-basis: 200px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px -3px rgba(0, 0, 0, 0.5);
+}
+
+.produtos .produto h2 {
+    font-size: 18px;
+    margin: 10px;
+}
+.produtos .produto .descricao {
+    font-size: 14px;
+    padding: 0 10px 10px 10px;
+}
+
+.produtos .produto button {
+    background-color: var(--cor-principal);
+    color: var(--cor-texto);
+    border: none;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.produtos .produto button:hover {
+    background-color: var(--cor-hover-botao);
+}
+.footer {
+    background-color: var(--cor-principal);
+    color: var(--cor-texto);
+    line-height: 48px;
+    text-align: center;
+}
