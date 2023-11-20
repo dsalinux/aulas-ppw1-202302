@@ -1,0 +1,37 @@
+/* 4 */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flexTG {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+}
+.flexTG > div {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+.flexTG .table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+.flexTG .table td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.flexTG .grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr 2fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+.flexTG .grid div {
+    padding: 5px;
+    border: 1px solid black;
+}

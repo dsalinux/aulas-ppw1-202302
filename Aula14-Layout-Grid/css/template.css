@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 'cabecalho cabecalho cabecalho'
+                         'nav main main'
+                         'footer footer footer';
+    grid-template-rows: auto 1fr auto;
+}
+body div {
+    border: 1px solid black;
+}
+div.header {
+    grid-area: cabecalho;
+    padding: 20px;
+}
+div.nav {
+    grid: nav;
+}
+div.main {
+    grid-area: main;
+}
+div.footer {
+    grid-area: footer;
+    padding: 20px;
+}

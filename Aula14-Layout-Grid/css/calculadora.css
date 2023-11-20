@@ -1,0 +1,36 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+table td {
+    border: 1px solid black;
+    padding: 5px;
+}   
+
+.calculadora-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr repeat(4, 1fr);
+    grid-gap: 5px;
+    width: 300px;
+    height: 300px;
+    padding: 5px;
+}
+.calculadora-grid .display {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    background-color: #A8C64E;
+    color: #000000;
+    text-shadow: 1px 1px 1px #0000005e;
+    text-align: right;
+    padding: 5px;
+    font-size: 1.5em;
+}
