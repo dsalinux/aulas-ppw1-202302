@@ -60,8 +60,35 @@ table td {
     font-size: 3em;
     font-family: 'Big Shoulders Stencil Text', sans-serif;
     box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: relative;
 }
-
+.calculadora-grid .display::after {
+    content: '';
+    width: 15%;
+    height: 200%;
+    display: block;
+    background-color: rgba(255,255,255,0.1);
+    overflow: hidden;
+    transform: translate(0%, -50%) rotate(35deg);
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    backdrop-filter: saturate(1.2);
+}
+.calculadora-grid .display::before {
+    content: '';
+    width: 5%;
+    height: 200%;
+    display: block;
+    background-color: rgba(255,255,255,0.1);
+    overflow: hidden;
+    transform: translate(0%, -50%) rotate(35deg);
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    backdrop-filter: saturate(1.2);
+}
 .calculadora-grid .zero {
     grid-column: 1 / 3;
 }
